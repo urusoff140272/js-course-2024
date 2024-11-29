@@ -1,16 +1,3 @@
-// проверка на число
-// let x = "9";
-// console.log(Number.isNaN(x));
-// let y = +x;
-// или
-// let z = Number(x);
-// console.log('y=' + typeof y);
-// console.log('z=' + typeof z);
-
-// console.log(!Number.isNaN(y));
-
-
-
 // обьект
 // let user ={};
 
@@ -49,16 +36,6 @@
 // перебор каждого єлемента
 // console.log(fruits.map(item => item.name.length));
 
-// FOR OF нет доступа до индекса
-// let arr = [45, 85, 71, 8.61];
-// for(let item of arr){
-//     console.log(item);
-// }
-// FOR IN с доступом до индекса
-// for(let key in arr){
-//     console.log(key + " = " + arr[key]);
-// }
-
 // const fruits = [
 //     { id: 0, name: "apple" },
 //     { id: 1, name: "tomat" },
@@ -77,25 +54,6 @@
 // }
 // console.log(fruitsName);
 
-// for (let i = 2; i <= 10; i++){
-//     if((i % 2)===0){
-//         console.log(i);
-//     }
-// }
-
-// let i = 0;
-// while (i < 5) {
-// console.log(`number ${i}!`);
-// i++;
-// }
-
-// while (true) {
-//     let value = +prompt('input value > 100')
-//     if (!value || value > 100) {
-//         console.log(value);
-//         break;
-//     }
-// }
 
 // REDUCE
 // let arr = [45, 85, 71, 8.61];
@@ -255,12 +213,3 @@
 //     city: 'Lviv',
 //     work: 'Radiotochka',
 // })
-
-const ask = (quection, yes, no) => {
-    if (confirm(quection)) {
-        return yes();
-    }
-    return no();
-}
-
-ask("Are you ready", () => { alert('READY') }, () => { alert("NO READY") })
